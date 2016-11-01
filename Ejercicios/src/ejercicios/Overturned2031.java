@@ -6,18 +6,17 @@
 package ejercicios;
 
 import java.util.Scanner;
-import java.util.Stack;
+
 
 /**
  *
  * @author danni
  */
-public class Overturned2031 {
+public class Overturned2031{
     public static void main(String args[]){
-        Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
-        Stack pila= new Stack();
-        String sCadenaInvertida = "";
+        
+        int n = 4;
+        
         if(n<5){
            if(n==1)
                System.out.println("01");
