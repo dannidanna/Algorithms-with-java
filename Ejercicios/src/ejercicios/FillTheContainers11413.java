@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
+/** 
  *
  * @author danni
  */
@@ -30,14 +30,18 @@ public class FillTheContainers11413 {
             aux = scan.nextInt();
             numeros.add(aux);
        }
-            
-       while(m>0 && m<n){
-        for(int i=cont; i<m; i++){
+       int aux2 = n-m+1; 
+       int aux3=m;
+       while(aux2>0){
+        for(int i=cont; aux3>0; i++){
              capacidad = capacidad + numeros.get(i);
-        }
+             aux3--;
+             }
+            aux3 = m;
             capacidades.add(capacidad);
             cont++;
-            m--;
+            capacidad =0;
+            aux2--;
         }
          
         System.out.println(minimo(capacidades));
